@@ -1,0 +1,78 @@
+@charset 'utf-8';
+
+button{cursor:pointer}
+
+.login_form{
+  width:640px; margin:0 auto;
+}
+.language{
+  text-align:right;
+}
+#lang{
+  padding:6px 10px; font-size:1.2em;
+}
+form{
+  width:460px; margin:0 auto; padding:30px 0;
+}
+#user_id, #user_pw, button{
+  display:block; box-sizing:border-box; width:100%; margin-bottom:20px; padding:20px; font-size:1.4em;
+}
+form>button{
+  border:none; background-color:#07c; color:white; font-weight:bold;
+}
+form>button:hover{
+  background-color:rgb(9, 105, 173);
+}
+form>button:active{
+  background-color:#094;
+}
+#save_chk{
+  display:none;
+}
+.login_save{
+  font-weight:bold; color:#07c; margin-bottom:2px;
+}
+#save_chk:checked ~ #chk_box{
+  border-color:#07c; background-color:#07c;
+}
+#save_chk:checked ~ #chk_box::before{
+  border-color:white;
+}
+
+#chk_box{
+  display:inline-block; box-sizing:border-box; width:14px; height:14px; border:1px solid #07c; border-radius:20%;
+}
+#chk_box::before{
+  content:''; display:inline-block; width:6px; height:3px; border-bottom:1px solid #07c; border-left:1px solid #07c; transform:rotate(-45deg) translate(6px, -2px)
+}
+
+hr{
+  margin:50px 0;
+}
+
+/* sns */
+.sns_login>h2{
+  padding-bottom:50px; font-size:2em; color:black; font-weight:bold; text-align:center;
+}
+
+.sns_login>button{
+  padding:10px; border:1px solid transparent; color:white;
+}
+.sns_login>button:nth-of-type(1){
+  background-color:#3B5998
+}
+.sns_login>button:nth-of-type(1):hover, .sns_login>button:nth-of-type(1):focus{
+  background-color: transparent; border:1px solid #3B5998; color: black;
+}
+.sns_login>button:nth-of-type(2){
+  background-color:green
+}
+.sns_login>button:nth-of-type(2):hover, .sns_login>button:nth-of-type(2):focus{
+  background-color: transparent; border:1px solid green; color: black;
+}
+.sns_login>button:nth-of-type(3){
+  background-color:yellow; color:black
+}
+.sns_login>button:nth-of-type(3):hover, .sns_login>button:nth-of-type(3):focus{
+  background-color: transparent; border:1px solid yellow; color: black;
+}
